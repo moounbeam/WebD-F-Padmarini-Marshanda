@@ -179,10 +179,10 @@
                     <th>REGISTAR</th>
                 </tr>
                 <tr>
-                    <td rowspan="4"></td>
-                    <td rowspan="4"></td>
-                    <td rowspan="4"></td>
-                    <td rowspan="4"></td>
+                    <td><br><br></td>
+                    <td ></td>
+                    <td ></td>
+                    <td ></td>
 
             </table>
 
@@ -196,7 +196,7 @@
             <em>Juga Melampirkan Surat/Sertifikat Dibawah Ini:</em>
             <p> </p>
 
-            <table border="1">
+            <table border="1" width="600px">
                 
                 <tr>
                     <th>Fak.Filsafat</th>
@@ -219,11 +219,8 @@
             <p></p>
             <label for="airmadidi">Airmadidi,<input type="date" name="airmamdidi" id="airmadidi"></label>
             <p>Yang Bermohon,</p>
-            <p></p>
-            <p></p>
-            <P></P>
-            <P></P>
-            <P>(Nama Lengkap Mahasiswa)</P>
+            <p><br/><br/></p>
+            <P><u>(Nama Lengkap Mahasiswa)</u></P>
         </form>
     </body>
 </html>
