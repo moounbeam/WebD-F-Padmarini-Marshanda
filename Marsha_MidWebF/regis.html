@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNKLAB Registration Form</title>
+    </head>
+    <body>
+        <nav>
+            <hr>
+            <a href="home.html">Beranda</a> |
+            <a href="about.html">Tentang Kami</a> |
+            <a href="regis.html">Pendaftaran</a> |
+            <a href="tuition.html">Biaya Kuliah</a> |
+            <a href="scholar.html">Beasiswa</a> |
+            <a href="contact.html">Kontak</a> |
+            <hr>
+        </nav>
+
+        <form>
+            <header>
+                <h1>UNKLAB Registration Form for New Student</h1>
+            </header>
+                <div>
+                    <label>Registration Number:</label>
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                    <input required type="text" size="1">
+                </div>
+                <br>
+                
+            <fieldset>
+                <legend>Personal Information</legend>
+                <table>
+                    <tr>
+                        <td >Full Name:</td>
+                        <td colspan="3"><input required type="text" name="fullname" size="60"></td>
+                    </tr>
+                    <tr>
+                        <td>Birthplace:</td>
+                        <td><input required type="text" name="birthplace"></td>
+                        <td>Date of Birth:</td>
+                        <td><input required type="date" name="birthdate"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input required type="radio" name="gender" value="Male"> Male
+                            <input required type="radio" name="gender" value="Female"> Female
+                        </td>
+                        <td>Blood Type:</td>
+                        <td>
+                            <input required type="radio" name="blood" value="A"> A
+                            <input required type="radio" name="blood" value="B"> B
+                            <input required type="radio" name="blood" value="AB"> AB
+                            <input required type="radio" name="blood" value="O"> O
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tribe:</td>
+                        <td><input required type="text" name="tribe"></td>
+                        <td>Email:</td>
+                        <td><input required type="email" name="email" size="16"></td>
+                    </tr>
+                    <tr>
+                        <td>Telephone Number:</td>
+                        <td><input required type="text" name="telephone"></td>
+                        <td>Mobile Number:</td>
+                        <td><input required type="text" name="mobile" size='16' ></td>
+                    </tr>
+                    <tr>
+                        <td>Status:</td>
+                        <td>
+                            <select name="status">
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                            </select>
+                        </td>
+
+                        <td>Religion:</td>
+                        <td>
+                            <select name="religion">
+                                <option value="Adventist">Seventh Day Adventist</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Islam">Muslim</option>
+                                <option value="Katolik">Catholic</option>
+                                <option value="Buddha">Buddhist</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Konghuchu">Konghuchu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Home Address:</td>
+                        <td><textarea name="homeaddress" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Postal Code:</td>
+                        <td><input required type="text" name="postalcode"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+
+                <legend>School Information</legend>
+                <table>
+                    <tr>
+                        <td>High School's Name:</td>
+                        <td colspan="3"><input required type="text" name="highschool" size="60"></td>
+                    </tr>
+                    <tr>
+                        <td>Program:</td>
+                        <td><input required type="text" name="program"></td>
+                        <td>Telephone Number:</td>
+                        <td><input required type="text" name="schooltelephone" size="13"></td>
+                    </tr>
+                    <tr>
+                        <td>School's Address:</td>
+                        <td><textarea name="schooladdress" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Postal Code:</td>
+                        <td><input required type="text" name="schoolpostalcode"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Parent's Information</legend>
+                <table>
+                    <tr>
+                        <td>Father's Name:</td>
+                        <td colspan="3"><input required type="text" name="fathername" size="60"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td><input required type="text" name="fathermobile"></td>
+                        <td>Email:</td>
+                        <td><input required type="email" name="fatheremail"></td>
+                    </tr>
+                    <tr>
+                        <td>Education:</td>
+                        <td>
+                            <select name="fathereducation">
+                                <option value="Elementary">Elementary</option>
+                                <option value="Junior High School">Junior High School</option>
+                                <option value="High School">High School</option>
+                                <option value="Associate Degree">Associate Degree</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="Doctoral Degree">Doctoral Degree (PhD)</option>
+                            </select>
+                        </td>
+                        <td>Religion:</td>
+                        <td>
+                            <select name="fatherreligion">
+                                <option value="Adventist">Seventh Day Adventist</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Islam">Muslim</option>
+                                <option value="Katolik">Catholic</option>
+                                <option value="Buddha">Buddhist</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Konghuchu">Konghuchu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mother's Name:</td>
+                        <td colspan="3"><input required type="text" name="mothername" size="60"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td><input required type="text" name="mothermobile"></td>
+                        <td>Email:</td>
+                        <td><input required type="email" name="motheremail"></td>
+                    </tr>
+                    <tr>
+                        <td>Education:</td>
+                        <td>
+                            <select name="mothereducation">
+                                <option value="Elementary">Elementary</option>
+                                <option value="Junior High School">Junior High School</option>
+                                <option value="High School">High School</option>
+                                <option value="Associate Degree">Associate Degree</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="Doctoral Degree">Doctoral Degree (PhD)</option>
+                            </select>
+                        </td>
+                        <td>Religion:</td>
+                        <td>
+                            <select name="motherreligion">
+                                <option value="Adventist">Seventh Day Adventist</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Islam">Muslim</option>
+                                <option value="Katolik">Catholic</option>
+                                <option value="Buddha">Buddhist</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Konghuchu">Konghuchu</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Parent Carer's Information</legend>
+                <table>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td colspan="3"><input required type="text" name="carerfullname" size="60"></td>
+                    </tr>
+                    <tr>
+                        <td>Family Relation:</td>
+                        <td><input required type="text" name="carerrelation"></td>
+                        <td>Email:</td>
+                        <td><input required type="email" name="careremail" size="18"></td>
+                    </tr>
+                    <tr>
+                        <td>Home Phone Number:</td>
+                        <td><input required type="text" name="carerhomephone"></td>
+                        <td>Mobile Number:</td>
+                        <td><input required type="text" name="carermobile" size="18"></td>
+                    </tr>
+                    <tr>
+                        <td>Education:</td>
+                        <td>
+                            <select name="carereducation">
+                                <option value="Elementary">Elementary</option>
+                                <option value="Junior High School">Junior High School</option>
+                                <option value="High School">High School</option>
+                                <option value="Associate Degree">Associate Degree</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="Doctoral Degree">Doctoral Degree (PhD)</option>
+                            </select>
+                        </td>
+                        <td>Religion:</td>
+                        <td><select name="motherreligion">
+                                <option value="Adventist">Seventh Day Adventist</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Islam">Muslim</option>
+                                <option value="Katolik">Catholic</option>
+                                <option value="Buddha">Buddhist</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Konghuchu">Konghuchu</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <br>
+                <input required type="checkbox" name="agreement"> 
+                I hereby state that all information on this New Student Registration Form are complete and true.<br>
+                All contents on this form I submitted to Universitas Klabat and Universitas Klabat are not oblidge to return it.
+            <br>
+            <p>Airmadidi,<input required type="date" name="airmadidi"></p>
+
+            
+            <div>
+                <input required type="reset" value="Reset">
+                <input required type="submit" value="Register">
+            </div>
+        </form>
+        <footer>
+            <hr>
+            <p>Copyright Webdesign Course UNKLAB © 2022 </p>
+        </footer>
+    </body>
+</html>
