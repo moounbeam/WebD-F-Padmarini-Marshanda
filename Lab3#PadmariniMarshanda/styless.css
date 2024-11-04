@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    color: rgb(19, 18, 18);
+    padding-top: 50px;}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0 -3em 3em rgba(255, 255, 255, 0.3),0 0 0 2px rgb(255, 255, 255),0.3em 0.3em 1em rgba(199, 194, 194, 0.6);
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    max-width:300px;}
+
+.form-content { padding: 5px;}
+
+button{
+    width: 97%;
+    font-size: 15px;
+    text-align: center;
+    min-height: 3em;
+    border-radius: 25px;}
+
+button.submit {
+    background-color:rgb(75, 133, 221);
+    color:white;
+    }
+button.submit:hover {background-color:rgb(132, 170, 240);}
+button.social:hover{ background-color: #bfc5c5;}
+
+footer{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    max-width:300px;
+    text-align: center;}
+
+input {
+    width: 97%;
+    min-height: 2em}
+
+.span {margin: 10px;}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.divider::before, .divider::after{
+    content: "";
+    flex: 1;
+    border: 1px solid grey;}
