@@ -21,7 +21,8 @@ button{
     font-size: 15px;
     text-align: center;
     min-height: 3em;
-    border-radius: 25px;}
+    border-radius: 25px;
+    cursor:pointer;}
 
 button.submit {
     background-color:rgb(75, 133, 221);
