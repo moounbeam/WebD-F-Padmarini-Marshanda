@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-final-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Final Web Design - CSS Grid Page Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <header class="header">
+        <div class="header__search">Search...</div>
+        <div class="header__avatar">
+          <img src="profile.jpg" style="height: 30px; width:30px; border-radius:50%; border: 10px;">
+        </div>
+      </header>
+
+      <aside class="sidenav">
+        <div id="logo">learn.in</div>
+        <ul class="sidenav__list">
+          <li class="sidenav__list-item"><i class="icon fa-solid fa-angle-right"></i> &nbsp; Dashboard</li>
+          <li class="sidenav__list-item" id="active"><i class="icon fa-solid fa-angle-right"></i> &nbsp; My Course</li>
+          <li class="sidenav__list-item"><i class="icon fa-solid fa-angle-right"></i> &nbsp; Task</li>
+          <li class="sidenav__list-item"><i class="icon fa-solid fa-angle-right"></i> &nbsp; Quiz</li>
+          <li class="sidenav__list-item"><i class="icon fa-solid fa-angle-right"></i> &nbsp; Grade</li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <div class="main-header">
+          <div class="main-header__heading">Hello, Marshanda</div>
+          <div class="main-header__updates"></div>
+        </div>
+        <div class="main-overview">
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Cyber Security</div>
+            <div class="overviewcard__info"><progress id="file" value="10" max="100"></progress></div>
+          </div>
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Web Design</div>
+            <div class="overviewcard__info"><progress id="file" value="20" max="100"></progress></div>
+          </div>
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Mathematical Logic</div>
+            <div class="overviewcard__info"><progress id="file" value="30" max="100"></progress></div>
+          </div>
+          <div class="overviewcard" id="done">
+            <div class="overviewcard__icon">Calculus I & II &nbsp; <i class="fa-solid fa-check" style="color: green;"></i></div>
+            <div class="overviewcard__info"><progress id="file" value="100" max="100"></progress></div>
+          </div>
+        </div>
+        <div class="top-cards">
+          <div class="card">
+          <canvas id="linechart" width="793" height="200"></canvas>
+          </div>
+          <div class="card">
+            <canvas id="piechart" width="397" height="200" style="margin-left: 70px;"></canvas>
+          </div>
+        </div>
+        <div class="bottom-cards">
+          <div class="card">
+            <canvas id="barchart" width="1200" height="200"></canvas>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__copyright">&copy; 2024 UK</div>
+        <div class="footer__signature">Made with love by pure genius</div>
+      </footer>
+    </div>
+    <script>
+      var ctx1 = document.getElementById('piechart').getContext('2d');
+      var ctx2 = document.getElementById('linechart').getContext('2d');
+      var ctx3 = document.getElementById('barchart').getContext('2d');
+      var piechart = new Chart(ctx1, {
+          type: 'pie',
+          data: {
+              datasets: [{
+                  data: [10, 20, 30, 100], 
+                  backgroundColor: ['#4C6174', '#3E4A5A', '#f0f8ff', '#7c98b0'],
+                  borderColor: '#000000',  
+                  borderWidth: 1  
+              }],
+          },
+      });
+      var linechart = new Chart(ctx2, {
+        type: 'line',
+        data: {
+            labels: ['Cyber Security', 'Web Design', 'Mathematical Logic', 'Calculus I & II'],  
+            datasets: [{
+                label: 'Course Fullfilment',
+                data: [10, 20, 30, 100], 
+                backgroundColor: ['#4C6174', '#3E4A5A', '#f0f8ff', '#7c98b0'],
+                borderColor: '#000000',  
+                borderWidth: 1  
+            }]
+        },
+    });
+    var barchart = new Chart(ctx3, {
+      type: 'bar',
+      data: {
+          labels: ['Cyber Security', 'Web Design', 'Mathematical Logic', 'Calculus I & II'],  
+          datasets: [{
+              label: 'Course Fullfilment',
+              data: [10, 20, 30, 100], 
+              backgroundColor: ['#4C6174', '#3E4A5A', '#f0f8ff', '#7c98b0'],
+              borderColor: '#000000',  
+              borderWidth: 1  
+          }]
+      },
+  });
+  </script>
+  </body>
+</html>
